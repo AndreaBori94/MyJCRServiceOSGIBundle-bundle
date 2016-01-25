@@ -43,7 +43,7 @@ public class HelloServiceImpl implements HelloService {
 			custNode.setProperty("desc", "asc hahah");
 			session.save();
 			session.logout();
-			return "fatto";
+			return "fatto " + node_path;
 		} catch (Exception e) {
 			return e.getMessage() +"cause: "+ e.getCause();
 		}
